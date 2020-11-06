@@ -1,3 +1,7 @@
+const n = 5,
+  lost = [2, 4],
+  reserve = [3, 5];
+
 function solution(n, lost, reserve) {
   const newLost = lost.filter((value) => !reserve.includes(value));
   const newReserve = reserve.filter((value) => !lost.includes(value));
@@ -18,3 +22,5 @@ function solution(n, lost, reserve) {
   const answer = n - newLost.length;
   return answer;
 }
+
+console.log(solution(n, lost, reserve));
