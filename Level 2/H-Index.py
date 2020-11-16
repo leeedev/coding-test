@@ -1,4 +1,4 @@
-citations = [0, 0, 0, 0, 0]
+citations = [3, 0, 6, 1, 5]
 
 
 def solution(citations):
